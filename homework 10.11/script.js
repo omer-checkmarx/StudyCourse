@@ -1,18 +1,28 @@
-function holoCube(){
-    let numOfDig= document.getElementById('Id').value
-    let n=numOfDig.length;
-    if(n==9){
-    for(let i=0; i<n; i++){
-        if(!(numOfDig[i]>=0 && numOfDig[i]<=9)) {
-         console.log('false');  
+function holoCube(num){
+    for(let i=0; i<num; i++){
+        if(i==0 || i==num-1){
+            let k='';
+            for(let q=0; q<num;q++){
+            k=k+'*';
+            }
+            console.log(k);
+        }
+        else{
+            let k2= '';
+            for(let w=0; w<num;w++){
+                if(w==0 || w==num-1){
+                    k2=k2+'*';
+                }
+                else{
+                    k2=k2+' ';
+                }                
+            }
+            console.log(k2);
+            
         }
     }
-    console.log('true');
 }
-    else{
-        console.log('false'); 
-    }
-}
+holoCube(4);
 // cheack if the id is ok
 
 function primeNumber(num){
