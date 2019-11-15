@@ -1,0 +1,24 @@
+#calculator{
+background-color: black;
+}
+button{
+    width: 60px;
+    height: 60px;
+    background-color: rgb(131, 131, 131);
+    font-size: large;
+    border-block-color:rgb(131, 131, 131) ;
+    border-left-color: rgb(131, 131, 131);
+    border-bottom: rgb(131, 131, 131);
+    border-top-color: rgb(0, 0, 0);
+    
+}
+#clear{
+    background-color: orange;
+}
+#screen{
+    width: 345px;
+    height: 44px;
+}
+.col-8{
+    background-color: white;
+}

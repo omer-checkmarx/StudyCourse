@@ -53,5 +53,36 @@ function spaceBefoUperCase(original){
     
 }
 spaceBefoUperCase('doRieLaBoYa')
-// space befor and capial letter
+//3. space befor capial letter
+
+function bubbleSort(string){
+    let len=string.length;
+    for(let j = 0; j <len; j++){
+    for(let i=0;i<len; i++){
+        if(string[i]> string[i+1]){
+            let temp= string[i+1];
+            string[i+1]= string[i];
+            string[i]=temp;
+        }
+    }
+}
+    console.log(string);
+}
+bubbleSort([10,245,2315,545]);
+// 6. sort from  the smallest to the largest
+
+
+let max =0;
+function largestNumber(){
+    let number= document.getElementById('viewNumbers').value;
+    while(number>=0){
+        if(number>max){
+            max=number;
+            document.getElementById('viewNumbers').innerHTML=number
+        }
+    }
+    if(number<0){
+        console.log(max);
+    }
+}
 
