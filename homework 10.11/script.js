@@ -71,18 +71,52 @@ function bubbleSort(string){
 bubbleSort([10,245,2315,545]);
 // 6. sort from  the smallest to the largest
 
-
 let max =0;
 function largestNumber(){
-    let number= document.getElementById('viewNumbers').value;
-    while(number>=0){
+    let number=document.getElementById('sendNumbers').value;
+    if(number>=0){
+        // document.getElementById('sendNumbers').innerHTML=number
         if(number>max){
             max=number;
-            document.getElementById('viewNumbers').innerHTML=number
         }
     }
-    if(number<0){
+    else{
         console.log(max);
     }
+}
+//4. keep asking for numbers until i get a negative one.
+
+function howMuchStInNd(firststring, secondstring){
+    let counter1=0;
+    let lengstr1=firststring.length;
+    let lengstr2= secondstring.length;
+    let l=0;
+    if(lengstr1>lengstr2){
+        for( let v =0; v < lengstr1; v++){
+            if(secondstr[l]==firststr[v]){
+                l++;
+                if(l==lengstr2){
+                    counter1++;
+                    l=0;
+                }
+            }
+            
+        }
+    }
+}
+// 5. how much time the first in the second
+function pushButton(butt){
+document.form.screen.value=document.form.screen.value+butt;
+}
+
+function equal(){
+    let equalButton= document.form.screen.value;
+    if(equalButton){
+    document.form.screen.value=eval(equalButton);
+    }
+}
+
+function clean(){
+    document.form.screen.value="";
 }
 

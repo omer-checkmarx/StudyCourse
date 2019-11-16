@@ -9,47 +9,50 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="calcBack">
-<div id="calculator" class="container">
-    <div class="row">
+    <div id="bg"></div>
+<div id="calculator">
+    
+        
         <!-- <div class col-3></div> -->
-        <div class="col-4"> <input id="screen" type="text"></div>
+        
+        <div class="col-4"> <form name="form"><input class="screen" name="screen"></form></div>
         <div class="col-8"></div>
-        <div class="row">
-    </div>        
+    
+    <table> 
+        <tr>     
             <!-- <div class="col-3"></div> -->
-            <div class="col-1"><button id="number" onClick="pushButton()">1</button></div>
-            <div class="col-1"><button onClick="pushButton()">2</button></div>
-            <div class="col-1"><button onClick="pushButton()">3</button></div>
-            <div class="col-1"><button>+</button></div>
-            <div class="col-8"></div>
-        </div>  
-            <div class="row">
+            <td><button class="number" onClick="pushButton(1)">1</button></td>
+            <td><button class="number" onClick="pushButton(2)">2</button></td>
+            <td><button class="number" onClick="pushButton(3)">3</button></td>
+            <td><button class="number" onClick="pushButton('+')">+</button></td>
+            
+        </tr>  
+        <tr>
+            
                     <!-- <div class="col-3"></div> -->
-                    <div class="col-1"><button>4</button></div>
-                    <div class="col-1"><button>5</button></div>
-                    <div class="col-1"><button>6</button></div>
-                    <div class="col-1"><button>-</button></div>
-                    <div class="col-8"></div>
-            </div>         
-                    <div class="row">
-                            <!-- <div class="col-3"></div> -->
-                            <div class="col-1"><button>7</button></div>
-                            <div class="col-1"><button>8</button></div>
-                            <div class="col-1"><button>9</button></div>
-                            <div class="col-1"><button>x</button></div>
-                            <div class="col-8"></div>
-                    </div>        
-                            <div class="row">
+            <td><button class="number" onClick="pushButton(4)">4</button></td>
+            <td><button class="number" onClick="pushButton(5)">5</button></td>
+            <td><button class="number" onClick="pushButton(6)">6</button></td>
+            <td><button class="number" onClick="pushButton('-')">-</button></td>
+                
+         </tr>  
+         <tr>                  
+                        <!-- <div class="col-3"></div> -->
+            <td><button class="number" onClick="pushButton(7)">7</button></td>
+            <td><button class="number" onClick="pushButton(8)">8</button></td>
+            <td><button class="number" onClick="pushButton(9)">9</button></td>
+            <td><button class="number" onClick="pushButton('*')">x</button></td>
+                          
+       </tr>
+       <tr>
                                     <!-- <div class="col-3"></div> -->
-                                    <div class="col-1"><button id="clear">C</button></div>
-                                    <div class="col-1"><button>0</button></div>
-                                    <div class="col-1"><button>=</button></div>
-                                    <div class="col-1"><button>/</button></div>
-                                    <div class="col-8"></div>
-                            </div>        
-</div>
+            <td><button class="number" id="clear" onClick="clean()">C</button></td>
+            <td><button class="number" onClick="pushButton(0)">0</button></td>
+            <td><button class="number" onClick="equal('=')">=</button></td>
+            <td><button class="number" onClick="pushButton('/')">/</button></td>
+        </tr>
 
+</table>
 </div>
     <script src="script.js"></script>
 </body>
