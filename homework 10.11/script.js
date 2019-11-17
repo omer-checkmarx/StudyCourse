@@ -87,24 +87,24 @@ function largestNumber(){
 //4. keep asking for numbers until i get a negative one.
 
 function howMuchStInNd(firststring, secondstring){
-    let counter1=0;
+    let counter1=0; //CR: Give it more intuitive name.
     let lengstr1=firststring.length;
     let lengstr2= secondstring.length;
     let l=0;
-    if(lengstr1>lengstr2){
+    if(lengstr1>lengstr2){ 
         for( let v =0; v < lengstr1; v++){
-            if(secondstr[l]==firststr[v]){
+            if(secondstr[l]==firststr[v]){ //CR: No there is a problem of doing it. v is always going up but l not.
                 l++;
                 if(l==lengstr2){
                     counter1++;
-                    l=0;
+                    l=0; //CR: Is this the only time you make it zero????
                 }
             }
             
         }
     }
 }
-// 5. how much time the first in the second
+// 5. how much time the first in the second //CR: The second in the first. in your "if(lengstr1>lengstr2){" you check that the first is *longer*
 function pushButton(butt){
 document.form.screen.value=document.form.screen.value+butt;
 }
