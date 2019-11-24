@@ -35,44 +35,44 @@ bubbleSort([10,245,2315,545]);
 
 
 
-debugger
-function singleNum(arr){
-    let temp=0;
-    for(i = 0; i < arr.length; i++){
-        for(j = i+1; j < arr.length; j++){
-            if(arr[i]==arr[j]){
-              temp=arr[j]  ;
-              arr[j]=arr[arr.length-1];
-              arr[arr.length-1]=temp;
-              arr.pop();
-            //   if(i>0){
-            //   i--;
-            //   }
-              break;
-            }
-        }
-    }
-    console.log(arr);
-    // return arr;
-}
-singleNum([2,2,5,7,5,7]);
 // debugger
-function useOfTargil3(arr2 , arr3){
-    let arr2new=singleNum(arr2);
-    let arr3new=singleNum(arr3);
-    let Narray=[0];
-    for(i = 0; i < arr2new.length; i++){
-        for(j = 0; i < arr3new.length; j++){
-            if(arr2new[i]==arr3new[j]){
-                Narray.push(arr2new[i]);
-                break;
-            }
-        }
-    }
-    console.log(Narray); 
-    // return Narray;  
-}
-useOfTargil3([3,5,7,1,3,9] , [2,2,5,7,5,7]);
+// function singleNum(arr){
+//     let temp=0;
+//     for(i = 0; i < arr.length; i++){
+//         for(j = i+1; j < arr.length; j++){
+//             if(arr[i]==arr[j]){
+//               temp=arr[j]  ;
+//               arr[j]=arr[arr.length-1];
+//               arr[arr.length-1]=temp;
+//               arr.pop();
+//             //   if(i>0){
+//             //   i--;
+//             //   }
+//               break;
+//             }
+//         }
+//     }
+//     console.log(arr);
+//     // return arr;
+// }
+// singleNum([2,2,5,7,5,7]);
+// // debugger
+// function useOfTargil3(arr2 , arr3){
+//     let arr2new=singleNum(arr2);
+//     let arr3new=singleNum(arr3);
+//     let Narray=[0];
+//     for(i = 0; i < arr2new.length; i++){
+//         for(j = 0; i < arr3new.length; j++){
+//             if(arr2new[i]==arr3new[j]){
+//                 Narray.push(arr2new[i]);
+//                 break;
+//             }
+//         }
+//     }
+//     console.log(Narray); 
+//     // return Narray;  
+// }
+// useOfTargil3([3,5,7,1,3,9] , [2,2,5,7,5,7]);
 
 
 
@@ -163,27 +163,37 @@ console.log(islandAmount([[0,0,0,1],
 
 
 
-
+// debugger
 function check(array){
-    for(i = 0; i < array.length; i++){
-        for(j = i+1; j < array.length; j++){
-            if(array[i]==array[j]){
-                return notgood;
-            }
+    for(i = 1; i <= 9; i++){
+        if(array.indexOf(i) == -1)
+        {
+            return false;
         }
     }
-    return good
+    return true;
 }
 
-
-
-
-
+debugger
 function allOfNums(mat){
-    for(i = 0; i <mat.length; i++){
-        let cotain1=check(mat[i]);
+    let contain1=0;
+    for(i = 0; i < 9; i++){
+     if(check(mat[i])){
+        contain1++;
+     }
     }
+    console.log(contain1);
+    
 }
+allOfNums([[1,2,3,4,5,6,7,8,9],
+    [9,8,8,7,6,5,4,3,2],
+    [1,2,3,4,5,6,7,8,4],
+    [2,1,3,4,5,5,6,7,8],
+    [1,1,1,1,1,1,1,1,1],
+    [9,8,7,6,5,4,3,2,1],
+    [5,4,3,2,1,6,7,8,9],
+    [2,2,3,3,4,4,5,5,6],
+    [3,2,1,4,5,6,7,8,3]]);
 // פונקציה שבודקת אם יש במערך כפל מספרים מ 1 עד 9 ואם כן היא מחזירה "לא טוב" ואם לא אז מחזירה "טוב".ו
 // היא חוזרת לתוך משתנה בטנקציה העיקריצ שתפקידה לבדוק  אם חזרו 9 פעמים "טוב" 
 // ואם באמת חזרו  פעמים 9 "טוב" אז ההמטריצה תקינה ואם לא אז היא לא תקינה
