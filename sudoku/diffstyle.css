@@ -1,0 +1,61 @@
+#welcomediv{
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 100px;
+}
+
+#definition{
+    box-sizing: border-box;
+    text-align: center;
+}
+#usertitle{
+    box-sizing: border-box;
+    color:rgb(0, 109, 128);
+    font-style: italic;
+}
+.level{
+    box-sizing: border-box;
+    width:80px;
+    height: 30px;
+    margin-left:55px;
+}
+#main{
+    }
+#nameOfPage{
+    font-size: 50px;
+    color: white;
+    letter-spacing: -2px;
+    font-style: oblique;
+}
+
+
+
+/* .level-of-diff{
+      box-sizing: border-box;
+width: 80px;
+height: auto;
+border-bottom-left-radius: 10px ;
+}
+
+#overall-button{
+      box-sizing: border-box;
+    position: absolute;
+    left: 550px;
+    top: 250px;
+    
+    
+}
+#difficult-header{
+      box-sizing: border-box;
+    position: absolute;
+    left: 600px;
+    top: 200px;
+} 
+ #all{
+       box-sizing: border-box;
+    height: 370px;
+margin-top: auto;
+margin-bottom: auto;
+width: 400px;
+background-color: rgba(0,0,0,0.5) !important;
+} */
