@@ -19,8 +19,8 @@ export default class App extends Component {
   }
   
   UpdateTheState=(r)=>{
-    this.setState({rooms:r})
-    console.log(this.state.rooms.roomName);
+    this.setState({rooms:r}) //CR: Problem: rooms its a list and you change it to a single room. you need to add the room to the list and not change the entire rooms variable
+    console.log(this.state.rooms.roomName); //CR: Rooms suppose to be a list of items, rooms. you cant access roonName of a list because its not an object its a list
     
   }
   
